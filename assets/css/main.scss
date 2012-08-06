@@ -1,5 +1,6 @@
 body{
-	font-family: "SourceSansPro-Light";
+	font-family: "source-sans-pro", "SourceSansPro-Light";
+	font-weight: 300;
 	padding: 0;
 	margin: 0;
 }
@@ -7,12 +8,23 @@ body{
 .centered{
 	max-width: 760px;
 	margin: 0 auto;
+
+
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
 
+hr{
+	max-width: 760px;
+	margin: 0 auto;
+	border: none;
+	border-bottom: 1px dotted #5784cb;
+    background-color: #FFF;
+    color: #FFF;
+    height: 1px;
 
+}
 
 header{
 	padding-top: 1px;
@@ -57,8 +69,8 @@ nav{
 		@extend .centered;
 		list-style: none;
 		li{
-			font-family: "SourceSansPro-Regular";
-			font-weight: normal;
+			font-family: "source-sans-pro", "SourceSansPro-Regular";
+			font-weight: 400;
 			display: inline-block;
 			font-size: 1.5em;
 			padding-right: 30px;
@@ -73,8 +85,8 @@ nav{
 
 
 h1, h2{
-	font-family: "SourceSansPro-Semibold";
-	font-weight: normal;
+	font-family: "source-sans-pro", "SourceSansPro-Semibold";
+	font-weight: 600;
 	//color: #FF0000;
 }
 
@@ -135,5 +147,9 @@ footer {
 
 
 	
+}
+
+@media screen and (max-width: 480px) {
+	@import 'phone';
 }
 

@@ -1,0 +1,22 @@
+
+@media screen  and  (max-width: 800px) {
+	nav{
+		ul{
+			padding-left: 20px;
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+	nav{
+		ul{
+			padding-left: 20px;
+			li{
+				display: block;
+			}
+		}
+	}
+}
