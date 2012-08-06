@@ -1,0 +1,139 @@
+body{
+	font-family: "SourceSansPro-Light";
+	padding: 0;
+	margin: 0;
+}
+
+.centered{
+	max-width: 760px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+
+header{
+	padding-top: 1px;
+	@extend .centered;
+	position: relative;
+
+	h1{
+		display: inline-block;
+		padding-right: 20px;
+	}
+	p{
+		display: inline-block;
+	}
+
+
+}
+header:before {
+  content: url(adobe.gif);
+  float:right;
+  margin: -1px 20px 0 0;
+
+  	h1{
+		margin: 0;
+	}
+
+}
+
+nav{
+	background: #4d74b3 center top no-repeat; 
+	background-image:  -webkit-gradient(linear, center top, center bottom, from(#4d74b3), to(#5784cb));
+	background-image:  -webkit-linear-gradient(top, #4d74b3, #5784cb);
+	background-image:  -moz-linear-gradient(top, #4d74b3, #5784cb);
+	background-image:  -o-linear-gradient(top, #4d74b3, #5784cb);
+	background-image:  -ms-linear-gradient(top, #4d74b3, #5784cb);
+	background-image:  linear-gradient(to bottom, #4d74b3, #5784cb);
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	
+	ul{
+
+		@extend .centered;
+		list-style: none;
+		li{
+			font-family: "SourceSansPro-Regular";
+			font-weight: normal;
+			display: inline-block;
+			font-size: 1.5em;
+			padding-right: 30px;
+			a{
+				color: #FFF;
+			}
+
+		}
+	}
+}
+
+
+
+h1, h2{
+	font-family: "SourceSansPro-Semibold";
+	font-weight: normal;
+	//color: #FF0000;
+}
+
+a{
+	color: #4166B5;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+article{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	@extend .centered;
+	h1{
+		margin: 0;
+	}
+
+	date{
+		color: #AAA;
+		font-size: 1.8em;
+
+	}
+	.speaker{
+		margin: 0;
+		font-size: 1.3em;
+	}
+}
+
+footer {
+	background: #4d74b3 center top no-repeat; 
+	background-image:  -webkit-gradient(linear, center top, center bottom, from(#4d74b3), to(#5784cb));
+	background-image:  -webkit-linear-gradient(top, #4d74b3, #5784cb);
+	background-image:  -moz-linear-gradient(top, #4d74b3, #5784cb);
+	background-image:  -o-linear-gradient(top, #4d74b3, #5784cb);
+	background-image:  -ms-linear-gradient(top, #4d74b3, #5784cb);
+	background-image:  linear-gradient(to bottom, #4d74b3, #5784cb);
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	
+	div{
+		@extend .centered;
+		p{
+			display: inline-block;
+			margin-right: 70px;
+		}
+		nav{
+			width: auto;
+			display: inline-block;
+			background: none;
+			ul{
+				padding: 0;
+			}
+		}
+	}
+
+
+	
+}
+
