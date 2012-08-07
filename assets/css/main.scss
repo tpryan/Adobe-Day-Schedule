@@ -14,6 +14,13 @@ body{
 	padding-right: 20px;
 }
 
+body > h2{
+	@extend .centered;
+	font-weight: 300;
+	font-size: 2em;
+	color: #AAA;
+}
+
 
 hr{
 	max-width: 760px;
@@ -99,6 +106,7 @@ a:hover{
 }
 
 article{
+	font-size: 1.2em;
 	margin-top: 10px;
 	margin-bottom: 30px;
 	@extend .centered;
@@ -114,6 +122,10 @@ article{
 	.speaker{
 		margin: 0;
 		font-size: 1.3em;
+	}
+
+	p{
+		line-height: 1.6;
 	}
 }
 
@@ -149,7 +161,6 @@ footer {
 	
 }
 
-@media screen and (max-width: 480px) {
-	@import 'phone';
-}
+
+@import 'phone';
 
